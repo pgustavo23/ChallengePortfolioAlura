@@ -566,7 +566,8 @@ body {
     /* Skills e Hobbies */
     .skills__lista,
     .hobbies__lista {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap:wrap ;
         gap: 16px;
     }
 
@@ -583,8 +584,8 @@ body {
 
     .skills__lista__item,
     .hobbies__lista__item {
-        min-width: auto;
-        height: auto;
+        min-width: 176px;
+        height: 176px;
     }
 
     /* Formação */
@@ -689,6 +690,25 @@ body {
     .imagemLinks {
         display: none;
     }   
+
+    .skills__lista,
+    .hobbies__lista {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .skills__lista__item,
+    .hobbies__lista__item {
+        display: flex;
+        align-items:center;
+        gap: 20px;
+        max-height: 90px;
+    }
+
+    .icones__skills,
+    .icones__hobbies {
+        max-height: 100%;
+    }
 
 
 }
